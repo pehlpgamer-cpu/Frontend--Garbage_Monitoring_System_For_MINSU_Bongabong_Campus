@@ -1,0 +1,5 @@
+@rootURL = http://localhost:5265
+
+###
+GET {{rootURL}}/api/Trashbin
+Accept: application/json
