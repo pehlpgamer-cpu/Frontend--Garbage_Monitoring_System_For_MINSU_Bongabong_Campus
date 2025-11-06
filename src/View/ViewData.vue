@@ -11,11 +11,8 @@ import NavBar from '@/components/navBar.vue';
     
 </template>
 
-<style>
+<style scoped>
 *{
     font-family: Arial, Helvetica, sans-serif;
-}
-main{
-    background-color: black;
 }
 </style>
