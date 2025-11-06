@@ -1,11 +1,11 @@
 <script setup>
 import NavBar from '@/components/navBar.vue';
+import RecordTrashbinData from '@/components/recordTrashbinData/RecordTrashbinData.vue';
 
 </script>
 
 <template>
-    <h1>Record trashbin</h1>
-    <input type="number" placeholder="trashbin Id"><button>Scan QR code</button>
+    <RecordTrashbinData/>
     <NavBar />
 </template>
 
