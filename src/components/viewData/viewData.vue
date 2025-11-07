@@ -23,23 +23,35 @@ onMounted(() => {
 })
 </script>
 <!--COMPONENT-->
+
 <!-- trasbins[1].trashbinId -->
 <template>
     <h1>VIEW DATA</h1>
-    <table>
+    <table style="">
         <tr>
             <th>ID</th>
-            <th></th>
-            <th></th>
+            <th>Container Color</th>
         </tr>
-        <tr>
-
+        <tr v-for="value in trasbins">
+            <th>{{ value.trashbinId }}</th>
+            <th>{{ value.containerColor }}</th>
         </tr>
     </table>
     <ul>
-        <li v-for="value in trasbins">{{ value.containerColor }}</li>
+        <!--<li v-for="value in trasbins">{{ value.containerColor }}</li>-->
     </ul>
 </template>
 <style scoped>
+table{
+    background-color: white;
+    border: 1px solid black;
+}
+tr{
+    border: 1px solid black;
+}
+th{
+    border: 1px solid black;
+    padding: 4px;
+}
 
 </style>
